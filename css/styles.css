@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+/*------- Class Styles -----*/
+.banner {
+    text-align: center;
+    border: 2px solid red;
+    background-color: blanchedalmond;
+    height: 340px;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 4px;
+    letter-spacing: .3em;
+}
+
+.container {
+    height: 440px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    display: inline-block;
+    width: 20%;
+    border: 1px dotted pink;
+    height: 400px;
+    
+}
+.main-footer {
+    height: 100px;
+    border: 2px solid green;
+}
