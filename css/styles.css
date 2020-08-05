@@ -22,7 +22,6 @@ body {
 
 .banner {
     text-align: center;
-    border: 2px solid#fff;
     /* background-image: url("../img/bruno-thethe-SUHlExhe61Y-unsplash.jpg");
     background-repeat: no-repeat; */
     background: linear-gradient(blue, transparent 90%),
@@ -38,11 +37,13 @@ body {
 }
 
 .banner h1 {
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Playball';
     text-transform: capitalize;
     padding-top: .5em;
     text-shadow: 2px 2px 1px #222;
+    margin-top: 0;
+    padding-top: 2em;
 }
 
 /*------- images -----*/
@@ -74,12 +75,30 @@ body {
 .col-2,
 .col-3,
 .col-4 {
-    width: 95%;
+    width: 100%;
     margin: auto;
     height: 350px;
     border-radius: 50%;
     margin-bottom: 1em;
     border-top: 10px solid #daa520;
+    float: left;
+    vertical-align: middle;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    position: relative;
+}
+
+.col-1 h3,
+.col-2 h3,
+.col-3 h3,
+.col-4 h3 {
+    position: absolute;
+    top: -3em;
+    right: 2.2em;
 }
 
 .container h3 {
@@ -89,36 +108,65 @@ body {
     text-align: center;
     padding-top: 4em;
     color: #fff;
+    text-shadow: 2px 2px 1px #222;
 }
 /*------- Nav Bar -----*/
 
 .main-footer {
     height: 100px;
-    border: 2px solid green;
+    background: linear-gradient(#fff, transparent 90%),
+        linear-gradient(0deg, blue, transparent )
 }
 
-
+.main-footer p{
+    font-family: 'Playball';
+    text-align: center;
+}
+/*------- Float Clearfix -----*/
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /*------- Media Quiries -----*/
-@media (min-width: 961px) and (max-width: 1290px) {
-    .banner {
-        text-align: center;
-        border: 2px solid red;
-        background-color: blanchedalmond;
-        height: 340px;
+@media (min-width: 641px) and (max-width: 2000px) {
+   
+    .wrapper {
+        width: 100%;
     }
 
-    .nav-bar li {
+    .banner {
+        width: 100%;
+        text-align: center;
+        height: 240px;
+        margin-bottom: 1em;
+        
+
+    }
+
+
+    .toggler {
+        display: none;
+    }
+
+    ul li {
         list-style: none;
         display: inline-block;
-        margin-right: 4px;
+        margin-right: 1rem;
         letter-spacing: .3em;
+        font-size: 2em;
+        font-family: "Playball";
     }
     
+    ul li a {
+        text-decoration: none;
+    }
     .container {
         height: 440px;
-        border: 2px solid black;
-        text-align: center;
+        margin: auto;
+        width: 95%;
+        padding-left: 4em;
     }
     
     .col-1,
@@ -126,14 +174,24 @@ body {
     .col-3,
     .col-4 {
         display: inline-block;
-        width: 20%;
-        border: 1px dotted pink;
+        width: 23%;
         height: 400px;
-        
+        border-radius: 25px;
+        margin-right: 1px;
+    }
+
+    .col-1 h3,
+    .col-2 h3,
+    .col-3 h3,
+    .col-4 h3 
+        {
+            width: 30%;
+        }
+    .col-4 {
+        padding-right: 0;
     }
     .main-footer {
         height: 100px;
-        border: 2px solid green;
     }
     
 }
