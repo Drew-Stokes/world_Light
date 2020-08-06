@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 640px) {
+@media (max-width: 320px) {
     ul li {
         list-style: none;
         text-decoration: none;

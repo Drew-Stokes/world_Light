@@ -14,9 +14,9 @@ body {
 }
 /*------- Class Styles -----*/
 .wrapper {
-    width: 80%;
+    width: 95%;
     margin: auto; 
-    
+    min-width: 314px;
 }
 
 
@@ -130,9 +130,83 @@ body {
 }
 
 /*------- Media Quiries -----*/
+
+@media (min-width: 320px ) and (max-width: 640px) {
+
+    .wrapper {
+        min-width: 545px;
+    }
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .banner {
+        width: 100%;
+        text-align: center;
+        height: 240px;
+        margin-bottom: 1em;
+        
+
+    }
+
+    .banner h1 {
+        padding-top: 0;
+    }
+
+    .case-1,
+    .case-2 {
+        width: 100%;
+    }
+
+    .col-1,
+    .col-2 {
+        width: 45%;
+        border-radius: 25px;
+    }
+
+    .col-3,
+    .col-4 {
+        width: 45%;
+        border-radius: 25px;
+    }
+
+    .col-1,
+    .col-3 {
+        margin-right: 1em;
+    }
+
+    .col-1 h3,
+    .col-2 h3,
+    .col-3 h3,
+    .col-4 h3 {
+    position: absolute;
+    top: -3em;
+    right: 1.3em;
+    }
+
+    .toggler {
+        display: none;
+    }
+
+    ul li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 1rem;
+        letter-spacing: .3em;
+        font-size: 2em;
+        font-family: "Playball";
+    }
+    
+    ul li a {
+        text-decoration: none;
+    }
+}
 @media (min-width: 641px) and (max-width: 2000px) {
    
     .wrapper {
+
+        min-width: 845px;
         width: 100%;
     }
 
@@ -187,6 +261,7 @@ body {
         {
             width: 30%;
         }
+
     .col-4 {
         padding-right: 0;
     }
